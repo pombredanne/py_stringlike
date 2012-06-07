@@ -34,6 +34,7 @@ Additionally provides ``LazyString`` and ``CachedLazyString`` classes which
 behave exactly like strings but allow strings to be constructed in a thunk
 (i.e. lazily) instead of strictly (i.e. immediately).
 
-Full documentation can be found at https://github.com/CovenantEyes/py-stringlike.
+Here's a blog giving an example of how it can be used:
+http://developer.covenanteyes.com/stringlike-in-python/
 """
 )

@@ -39,6 +39,9 @@ Use the provided lazy string implementations like this:
     print "This is {str}".format(str=CachedLazyString(lambda: "cached"))
 
 
+A more detailed example can be found
+[here](http://developer.covenanteyes.com/stringlike-in-python/).
+
 License
 -------
 
