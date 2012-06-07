@@ -1,4 +1,41 @@
-py-stringlike
-=============
+stringlike
+==========
 
-Python library for implementing string-like classes and lazy strings
+A Python library for implementing string-like classes and lazy strings.
+
+
+Installation
+------------
+
+`stringlike` is available from [PyPI](http://pypi.python.org/pypi/stringlike).
+
+To install:
+
+    pip install stringlike
+
+Or from the source:
+
+    python setup.py install
+
+
+Usage
+-----
+
+To implement your own `StringLike` class, inherit from `StringLike` and implement
+the `__str__` magic function, like this:
+
+    from stringlike import StringLike
+    
+
+    class StringyThingy(StringLike):
+        def __str__(self):
+            return "A string representation of my class."
+
+
+Use the provided lazy string implementations like this:
+
+    from stringlike.lazystring import LazyString, CachedLazyString
+
+    print "This was lazily {str}".format(str=LazyString(lambda: "generated"))
+    print "This is {str}".format(str=CachedLazyString(lambda: "cached"))
+

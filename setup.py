@@ -33,5 +33,7 @@ that a normal string doesn't provide.
 Additionally provides ``LazyString`` and ``CachedLazyString`` classes which
 behave exactly like strings but allow strings to be constructed in a thunk
 (i.e. lazily) instead of strictly (i.e. immediately).
+
+Full documentation can be found at https://github.com/CovenantEyes/py-stringlike.
 """
 )
