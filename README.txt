@@ -26,7 +26,6 @@ the `__str__` magic function, like this:
 
     from stringlike import StringLike
     
-
     class StringyThingy(StringLike):
         def __str__(self):
             return "A string representation of my class."
@@ -39,3 +38,9 @@ Use the provided lazy string implementations like this:
     print "This was lazily {str}".format(str=LazyString(lambda: "generated"))
     print "This is {str}".format(str=CachedLazyString(lambda: "cached"))
 
+
+License
+-------
+
+This package is released under the [MIT License](http://www.opensource.org/licenses/mit-license.php).
+(See COPYING.txt.)
