@@ -3,7 +3,7 @@ from distutils.core import setup
 setup(
     name = "stringlike",
     packages = ["stringlike"],
-    version = "0.1",
+    version = "0.2",
     description = "Classes for mimicking string behavior",
     author = "Elliot Cameron",
     author_email = "elliot.cameron@covenanteyes.com",

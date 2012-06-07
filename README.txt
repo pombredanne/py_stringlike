@@ -33,7 +33,7 @@ the `__str__` magic function, like this:
 
 Use the provided lazy string implementations like this:
 
-    from stringlike.lazystring import LazyString, CachedLazyString
+    from stringlike.lazy import LazyString, CachedLazyString
 
     print "This was lazily {str}".format(str=LazyString(lambda: "generated"))
     print "This is {str}".format(str=CachedLazyString(lambda: "cached"))

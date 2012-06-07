@@ -3,7 +3,7 @@ Contains classes for representing lazy strings (i.e. strings that aren't constru
 needed).
 """
 
-from stringlike import StringLike
+from core import StringLike
 
 
 class LazyString(StringLike):
