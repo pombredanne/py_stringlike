@@ -42,6 +42,14 @@ Use the provided lazy string implementations like this:
 A more detailed example can be found
 [here](http://developer.covenanteyes.com/stringlike-in-python/).
 
+
+Acknowledgements
+----------------
+
+Special thanks to [Eric Shull](https://github.com/exupero) for much Python
+help!
+
+
 License
 -------
 
