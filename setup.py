@@ -3,12 +3,12 @@ from distutils.core import setup
 setup(
     name = "stringlike",
     packages = ["stringlike"],
-    version = "0.2",
+    version = "0.2.1",
     description = "Classes for mimicking string behavior",
     author = "Elliot Cameron",
     author_email = "elliot.cameron@covenanteyes.com",
     url = "https://github.com/CovenantEyes/py-stringlike",
-    download_url = "https://github.com/CovenantEyes/py-stringlike/tarball/master",
+    download_url = "https://github.com/CovenantEyes/py-stringlike/tarball/v0.2.1",
     keywords = ["string", "lazy"],
     classifiers = [
         "Programming Language :: Python",
