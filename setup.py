@@ -1,14 +1,17 @@
 # stringlike's setup.py
 from distutils.core import setup
+
+from stringlike import __version__
+
 setup(
     name = "stringlike",
     packages = ["stringlike"],
-    version = "0.2.1",
+    version = __version__,
     description = "Classes for mimicking string behavior",
     author = "Elliot Cameron",
     author_email = "elliot.cameron@covenanteyes.com",
-    url = "https://github.com/CovenantEyes/py-stringlike",
-    download_url = "https://github.com/CovenantEyes/py-stringlike/tarball/v0.2.1",
+    url = "https://github.com/CovenantEyes/py_stringlike",
+    download_url = "https://github.com/CovenantEyes/py_stringlike/tarball/v" + __version__,
     keywords = ["string", "lazy"],
     classifiers = [
         "Programming Language :: Python",
@@ -34,7 +37,7 @@ Additionally provides ``LazyString`` and ``CachedLazyString`` classes which
 behave exactly like strings but allow strings to be constructed in a thunk
 (i.e. lazily) instead of strictly (i.e. immediately).
 
-Here's a blog giving an example of how it can be used:
+An example of how it can be used:
 http://developer.covenanteyes.com/stringlike-in-python/
 """
 )
