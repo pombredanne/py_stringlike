@@ -43,6 +43,16 @@ A more detailed example can be found
 [here](http://developer.covenanteyes.com/stringlike-in-python/).
 
 
+Unit Tests
+----------
+
+To run the unit tests, simply run the `*_tests.py` files in `stringlike/test` with Python, like
+this (you can actually run them from any directory):
+
+    python stringlike/test/core_tests.py
+    python stringlike/test/lazy_tests.py
+
+
 Acknowledgements
 ----------------
 
