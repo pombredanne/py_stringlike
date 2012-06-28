@@ -68,6 +68,8 @@ class TestStringLikeMagicMethods(TestCase):
     def test_subindex(self):
         self.assertEqual(StringMock('abc')[0], 'a')
         self.assertEqual(StringMock('abc')[2], 'c')
+        self.assertEqual(StringMock('abc')[1:], 'bc')
+        self.assertEqual(StringMock('abc')[:-1], 'ab')
         with self.assertRaises(IndexError):
             StringMock('abc')[3]
 
