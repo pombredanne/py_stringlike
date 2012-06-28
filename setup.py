@@ -5,7 +5,7 @@ from stringlike import __version__
 
 setup(
     name = "stringlike",
-    packages = ["stringlike"],
+    packages = ["stringlike", "stringlike.test"],
     version = __version__,
     description = "Classes for mimicking string behavior",
     author = "Elliot Cameron",

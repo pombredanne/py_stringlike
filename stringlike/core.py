@@ -12,8 +12,8 @@ class StringLike(object):
 
     def __getattr__(self, attr):
         """
-        Forwards any other methods to the resulting string's class. This allows support for string
-        methods like `upper()`, `lower()`, sub-indexing, etc.
+        Forwards any non-magic methods to the resulting string's class. This allows support for
+        string methods like `upper()`, `lower()`, etc.
         """
         string = str(self)
         if hasattr(string, attr):
@@ -21,37 +21,43 @@ class StringLike(object):
         raise AttributeError(attr)
 
     def __len__(self):
-        """
-        Mimics the behavior of `len(a)` on strings for this class.
-        """
         return len(str(self))
 
     def __getitem__(self, key):
-        """
-        Mimics the behavior of `a[n]` on strings for this class.
-        """
         return str(self)[key]
 
     def __iter__(self):
-        """
-        Mimics the behavior of `iter(a)` on strings for this class.
-        """
         return iter(str(self))
 
     def __contains__(self, item):
-        """
-        Mimics the behavior of `a in b` on strings for this class.
-        """
         return item in str(self)
 
     def __add__(self, other):
-        """
-        Mimics the behavior of `a + b` on strings for this class.
-        """
         return str(self) + other
 
     def __radd__(self, other):
-        """
-        Mimics the behavior of `b + a` on strings for this class.
-        """
         return other + str(self)
+
+    def __mul__(self, other):
+        return str(self) * other
+
+    def __rmul__(self, other):
+        return other * str(self)
+
+    def __lt__(self, other):
+        return str(self) < other
+
+    def __le__(self, other):
+        return str(self) <= other
+
+    def __eq__(self, other):
+        return str(self) == other
+
+    def __ne__(self, other):
+        return str(self) != other
+
+    def __gt__(self, other):
+        return str(self) > other
+
+    def __ge__(self, other):
+        return str(self) >= other
