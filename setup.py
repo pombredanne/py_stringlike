@@ -4,26 +4,26 @@ from distutils.core import setup
 from stringlike import __version__
 
 setup(
-    name = "stringlike",
-    packages = ["stringlike"],
+    name = 'stringlike',
+    packages = ['stringlike'],
     version = __version__,
-    description = "Classes for mimicking string behavior",
-    author = "Elliot Cameron",
-    author_email = "elliot.cameron@covenanteyes.com",
-    url = "https://github.com/CovenantEyes/py_stringlike",
-    download_url = "https://github.com/CovenantEyes/py_stringlike/tarball/v" + __version__,
-    keywords = ["string", "lazy"],
+    description = 'Classes for mimicking string behavior',
+    author = 'Elliot Cameron',
+    author_email = 'elliot.cameron@covenanteyes.com',
+    url = 'https://github.com/CovenantEyes/py_stringlike',
+    download_url = 'https://github.com/CovenantEyes/py_stringlike/tarball/v' + __version__,
+    keywords = ['string', 'lazy'],
     platforms = ['any'],
     classifiers = [
-        "Programming Language :: Python",
-        "Programming Language :: Python :: 2.7",
-        "Development Status :: 4 - Beta",
-        "Environment :: Other Environment",
-        "Intended Audience :: Developers",
-        "License :: OSI Approved :: MIT License",
-        "Natural Language :: English",
-        "Operating System :: OS Independent",
-        "Topic :: Software Development :: Libraries :: Python Modules",
+        'Programming Language :: Python',
+        'Programming Language :: Python :: 2.7',
+        'Development Status :: 4 - Beta',
+        'Environment :: Other Environment',
+        'Intended Audience :: Developers',
+        'License :: OSI Approved :: MIT License',
+        'Natural Language :: English',
+        'Operating System :: OS Independent',
+        'Topic :: Software Development :: Libraries :: Python Modules',
         ],
     long_description = """
 String-Like Classes
@@ -39,6 +39,5 @@ behave exactly like strings but allow strings to be constructed in a thunk
 (i.e. lazily) instead of strictly (i.e. immediately).
 
 An example of how it can be used:
-http://developer.covenanteyes.com/stringlike-in-python/
-"""
+http://developer.covenanteyes.com/stringlike-in-python/"""
 )
