@@ -5,7 +5,7 @@ from stringlike import __version__
 
 setup(
     name = "stringlike",
-    packages = ["stringlike", "stringlike.test"],
+    packages = ["stringlike"],
     version = __version__,
     description = "Classes for mimicking string behavior",
     author = "Elliot Cameron",
@@ -13,6 +13,7 @@ setup(
     url = "https://github.com/CovenantEyes/py_stringlike",
     download_url = "https://github.com/CovenantEyes/py_stringlike/tarball/v" + __version__,
     keywords = ["string", "lazy"],
+    platforms = ['any'],
     classifiers = [
         "Programming Language :: Python",
         "Programming Language :: Python :: 2.7",
@@ -24,7 +25,7 @@ setup(
         "Operating System :: OS Independent",
         "Topic :: Software Development :: Libraries :: Python Modules",
         ],
-    long_description = """\
+    long_description = """
 String-Like Classes
 -------------------
 

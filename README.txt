@@ -21,8 +21,8 @@ Or from the source:
 Usage
 -----
 
-To implement your own `StringLike` class, inherit from `StringLike` and implement
-the `__str__` magic function, like this:
+To implement your own `StringLike` class, inherit from `StringLike` and
+implement the `__str__` magic function, like this:
 
     from stringlike import StringLike
     
@@ -46,11 +46,11 @@ A more detailed example can be found
 Unit Tests
 ----------
 
-To run the unit tests, simply run the `*_tests.py` files in `stringlike/test` with Python, like
-this (you can actually run them from any directory):
+To run the unit tests, simply run the `test*.py` files in `test/` with Python,
+like this (you can actually run them from any directory):
 
-    python stringlike/test/core_tests.py
-    python stringlike/test/lazy_tests.py
+    python test/test_core.py
+    python test/test_lazy.py
 
 
 Acknowledgements
@@ -63,5 +63,6 @@ help!
 License
 -------
 
-This package is released under the [MIT License](http://www.opensource.org/licenses/mit-license.php).
-(See COPYING.txt.)
+This package is released under the
+[MIT License](http://www.opensource.org/licenses/mit-license.php).
+(See LICENSE.txt.)
