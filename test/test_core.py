@@ -115,6 +115,10 @@ class TestStringLikeMagicMethods(TestCase):
         self.assertEqual('a' or StringMock('bc'), 'a')
         self.assertEqual(StringMock('a') or 'bc', 'a')
 
+    def test_attribute_error(self):
+        with self.assertRaises(AttributeError):
+            StringMock('').gobbledygook()
+
 
 class TestSomeStringMethods(TestCase):
     def test_capitalize(self):
