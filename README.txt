@@ -3,11 +3,7 @@ stringlike
 
 A Python library for implementing string-like classes and lazy strings.
 
-<a href="http://travis-ci.org/#!/CovenantEyes/py_stringlike">
-<div style="float: right">
-<img src="https://secure.travis-ci.org/CovenantEyes/py_stringlike.png?branch=master" />
-</div>
-</a>
+[![Build Status](https://secure.travis-ci.org/CovenantEyes/py_stringlike.png?branch=master)](http://travis-ci.org/CovenantEyes/py_stringlike)
 
 
 Installation
