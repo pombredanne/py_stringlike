@@ -1,11 +1,9 @@
-<div style="float: right">
-[![Build Status](https://secure.travis-ci.org/CovenantEyes/py_stringlike.png?branch=master)](http://travis-ci.org/CovenantEyes/py_stringlike)
-</div>
-
 stringlike
 ==========
 
 A Python library for implementing string-like classes and lazy strings.
+
+[![Build Status](https://secure.travis-ci.org/CovenantEyes/py_stringlike.png?branch=master)](http://travis-ci.org/CovenantEyes/py_stringlike)
 
 
 Installation
