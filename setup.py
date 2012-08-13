@@ -1,3 +1,5 @@
+#!/usr/bin/env python
+
 # stringlike's setup.py
 from distutils.core import setup
 
