@@ -11,11 +11,11 @@ Installation
 
 To install:
 
-    pip install stringlike
+    $ pip install stringlike
 
 Or from the source:
 
-    python setup.py install
+    $ python setup.py install
 
 
 Usage
@@ -46,11 +46,9 @@ A more detailed example can be found
 Unit Tests
 ----------
 
-To run the unit tests, simply run the `test*.py` files in `test/` with Python,
-like this (you can actually run them from any directory):
+To run the unit tests, do this:
 
-    python test/test_core.py
-    python test/test_lazy.py
+    $ python test/run_tests.py
 
 
 Acknowledgements
