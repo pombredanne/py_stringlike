@@ -1,4 +1,4 @@
-<div style="float: right"><img src="whatever.jpg" />
+<div style="float: right">
 [![Build Status](https://secure.travis-ci.org/CovenantEyes/py_stringlike.png?branch=master)](http://travis-ci.org/CovenantEyes/py_stringlike)
 </div>
 
