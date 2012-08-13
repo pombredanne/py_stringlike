@@ -1,4 +1,4 @@
-from core import StringLike
+from stringlike.core import StringLike
 
 
 __version__ = '0.3.0'
