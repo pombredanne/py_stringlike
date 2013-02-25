@@ -121,6 +121,11 @@ class TestStringLikeMagicMethods(TestCase):
         with self.assertRaises(AttributeError):
             StringMock('').gobbledygook()
 
+    def test_instancecheck(self):
+        self.assertTrue(isinstance(StringMock(''), StringLike))
+        self.assertTrue(isinstance(StringMock(''), str))
+        self.assertTrue(isinstance(StringMock(''), basestring))
+
 
 class TestSomeStringMethods(TestCase):
     def test_capitalize(self):

@@ -3,7 +3,7 @@ Contains classes to help other classes mimic the behavior of strings.
 """
 
 
-class StringLike(object):
+class StringLike(str):
     """
     Class to mimic the behavior of a regular string. Classes that inherit (or mixin) this class
     must implement the `__str__` magic method. Whatever that method returns is used by the various
