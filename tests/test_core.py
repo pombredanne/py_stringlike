@@ -135,7 +135,7 @@ class TestStringLikeMagicMethods(TestCase):
         self.assertEqual(next(iterator), 'b')
         self.assertEqual(next(iterator), 'c')
         with self.assertRaises(StopIteration):
-            iterator.next()
+            next(iterator.next())
 
         # test unicode
         iterator = iter(StringMock('вгд'))
@@ -143,7 +143,7 @@ class TestStringLikeMagicMethods(TestCase):
         self.assertEqual(next(iterator), 'г')
         self.assertEqual(next(iterator), 'д')
         with self.assertRaises(StopIteration):
-            iterator.next()
+            next(iterator.next())
 
     def test_nonzero(self):
         self.assertTrue(bool(StringMock('abc')))
