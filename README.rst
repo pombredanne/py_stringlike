@@ -1,9 +1,9 @@
 stringlike
 ==========
 
-A Python library for implementing string-like classes and lazy strings.
-
 |Build Status| |Coverage Status| |PyPi package| |PyPi downloads|
+
+A Python library for implementing string-like classes and lazy strings.
 
 Installation
 ------------
