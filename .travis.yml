@@ -7,8 +7,7 @@ install:
     - pip install . --use-mirrors
     - pip install nose coverage coveralls --use-mirrors
 script:
-    - pwd
-    - coverage run test/run_tests.py
+    - coverage run `which nosetests` --nocapture
     - coverage report -m
 after_success:
     - coveralls
