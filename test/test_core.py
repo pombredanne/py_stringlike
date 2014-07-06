@@ -1,4 +1,5 @@
 #!/usr/bin/env python
+# -*- coding: utf-8 -*-
 
 from stringlike import StringLike
 from unittest import main, TestCase

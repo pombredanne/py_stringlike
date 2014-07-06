@@ -1,4 +1,5 @@
 #!/usr/bin/env python
+# -*- coding: utf-8 -*-
 
 from stringlike.lazy import LazyString, CachedLazyString
 from unittest import main, TestCase
@@ -14,7 +15,7 @@ class TestLazyString(TestCase):
         def func():
             self.evaluateCount += 1
             return 'abc'
-        
+
         lazyString = LazyString(func)
         self.assertEqual(self.evaluateCount, 0)
 
@@ -35,7 +36,7 @@ class TestCachedLazyString(TestCase):
         def func():
             self.evaluateCount += 1
             return 'abc'
-        
+
         cachedLazyString = CachedLazyString(func)
         self.assertEqual(self.evaluateCount, 0)
 

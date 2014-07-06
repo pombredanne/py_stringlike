@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 """
 Contains classes to help other classes mimic the behavior of strings.
 """
@@ -5,15 +6,15 @@ Contains classes to help other classes mimic the behavior of strings.
 
 class StringLike(object):
     """
-    Class to mimic the behavior of a regular string. Classes that inherit (or mixin) this class
-    must implement the `__str__` magic method. Whatever that method returns is used by the various
-    string-like methods.
+    Class to mimic the behavior of a regular string. Classes that inherit (or
+    mixin) this class must implement the `__str__` magic method. Whatever that
+    method returns is used by the various string-like methods.
     """
 
     def __getattr__(self, attr):
         """
-        Forwards any non-magic methods to the resulting string's class. This allows support for
-        string methods like `upper()`, `lower()`, etc.
+        Forwards any non-magic methods to the resulting string's class. This
+        allows support for string methods like `upper()`, `lower()`, etc.
         """
         string = str(self)
         if hasattr(string, attr):
