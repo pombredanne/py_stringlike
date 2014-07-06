@@ -78,7 +78,7 @@ LICENSE.txt.)
    :target: https://travis-ci.org/CovenantEyes/py_stringlike
 .. |Coverage Status| image:: http://img.shields.io/coveralls/CovenantEyes/py_stringlike.svg?style=flat&branch=master
    :target: https://coveralls.io/r/CovenantEyes/py_stringlike?branch=master
-.. |PyPi package| image:: http://img.shields.io/pypi/v/py_stringlike.svg?style=flat
-   :target: http://badge.fury.io/py/py_stringlike/
-.. |PyPi downloads| image::  http://img.shields.io/pypi/dm/py_stringlike.svg?style=flat
-   :target: https://crate.io/packages/py_stringlike/
+.. |PyPi package| image:: http://img.shields.io/pypi/v/stringlike.svg?style=flat
+   :target: http://badge.fury.io/py/stringlike/
+.. |PyPi downloads| image::  http://img.shields.io/pypi/dm/stringlike.svg?style=flat
+   :target: https://crate.io/packages/stringlike/
