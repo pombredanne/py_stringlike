@@ -1,6 +1,6 @@
 [run]
 source = stringlike
-omit = */tests/*
+omit = test/*
 
 [report]
 exclude_lines =

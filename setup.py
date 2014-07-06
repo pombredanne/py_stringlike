@@ -1,7 +1,15 @@
 #!/usr/bin/env python
-from distutils.core import setup
+import os
 
+from distutils.core import setup
 from stringlike import __version__
+
+
+here = os.path.abspath(os.path.dirname(__file__))
+
+requirements = [
+    r.strip() for r in open(os.path.join(here, 'requirements.txt')).readlines()
+]
 
 setup(
     name='stringlike',
@@ -14,6 +22,7 @@ setup(
     download_url='https://github.com/CovenantEyes/py_stringlike/tarball/v' + __version__,
     keywords=['string', 'lazy'],
     platforms=['any'],
+    install_requires=requirements,
     classifiers=[
         'Programming Language :: Python',
         'Programming Language :: Python :: 2.7',
