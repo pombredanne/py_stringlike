@@ -56,7 +56,7 @@ To run the unit tests, do this:
 
 ::
 
-    $ python test/run_tests.py
+    $ python tests/run_tests.py
 
 To see the latest test results, check out ``stringlike``'s `Travis CI
 page <http://travis-ci.org/#!/CovenantEyes/py_stringlike>`__.

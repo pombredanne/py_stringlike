@@ -131,17 +131,17 @@ class TestStringLikeMagicMethods(TestCase):
         self.assertEqual([x for x in StringMock('вгд')], ['в', 'г', 'д'])
 
         iterator = iter(StringMock('abc'))
-        self.assertEqual(iterator.next(), 'a')
-        self.assertEqual(iterator.next(), 'b')
-        self.assertEqual(iterator.next(), 'c')
+        self.assertEqual(next(iterator), 'a')
+        self.assertEqual(next(iterator), 'b')
+        self.assertEqual(next(iterator), 'c')
         with self.assertRaises(StopIteration):
             iterator.next()
 
         # test unicode
         iterator = iter(StringMock('вгд'))
-        self.assertEqual(iterator.next(), 'в')
-        self.assertEqual(iterator.next(), 'г')
-        self.assertEqual(iterator.next(), 'д')
+        self.assertEqual(next(iterator), 'в')
+        self.assertEqual(next(iterator), 'г')
+        self.assertEqual(next(iterator), 'д')
         with self.assertRaises(StopIteration):
             iterator.next()
 
