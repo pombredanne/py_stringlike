@@ -4,7 +4,7 @@ Contains classes for representing lazy strings (i.e. strings that aren't
 constructed until they're needed).
 """
 
-from stringlike.core import StringLike, text_type
+from stringlike.core import StringLike
 
 
 class LazyString(StringLike):
@@ -23,7 +23,7 @@ class LazyString(StringLike):
         """
         Returns the actual string.
         """
-        return text_type(self._func())
+        return self.text_type(self._func())
 
 
 class CachedLazyString(LazyString):
@@ -42,5 +42,5 @@ class CachedLazyString(LazyString):
         Returns the actual string and caches the result.
         """
         if not self._cache:
-            self._cache = text_type(self._func())
+            self._cache = self.text_type(self._func())
         return self._cache

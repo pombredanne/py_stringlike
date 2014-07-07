@@ -2,10 +2,10 @@
 # -*- coding: utf-8 -*-
 from __future__ import unicode_literals
 
-from six import text_type
 from unittest import main, TestCase
 
 from stringlike import StringLike
+from stringlike.utils import text_type
 
 
 class StringMock(StringLike):
@@ -22,7 +22,7 @@ class StringMock(StringLike):
         """
         Just return whatever we got during construction.
         """
-        return text_type(self.string)
+        return self.text_type(self.string)
 
 
 class TestStringLikeMagicMethods(TestCase):
