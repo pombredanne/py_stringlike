@@ -35,7 +35,19 @@ and implement the ``__str__`` magic function, like this:
 
     class StringyThingy(StringLike):
         def __str__(self):
-            return "A string representation of my class."
+            return self.text_type("A string representation of my class.")
+            
+..            
+    
+    Instances of ``StringLike`` class have a ``text_type`` property. By
+    default it holds a propper string type for current version of Python:
+    ``str`` for Python 3 and ``unicode`` for Python 2.
+
+You can redefine ``text_type`` property for your needs.
+
+It's strongly recommended to use it anyway just to make your code
+compatible with different versions of Python.
+
 
 Use the provided lazy string implementations like this:
 
