@@ -1,6 +1,7 @@
+# -*- coding: utf-8 -*-
 """
-Contains classes for representing lazy strings (i.e. strings that aren't constructed until they're
-needed).
+Contains classes for representing lazy strings (i.e. strings that aren't
+constructed until they're needed).
 """
 
 from stringlike.core import StringLike
@@ -8,12 +9,13 @@ from stringlike.core import StringLike
 
 class LazyString(StringLike):
     """
-    A lazy string *without* caching. The resulting string is regenerated for every request.
+    A lazy string *without* caching. The resulting string is regenerated for
+    every request.
     """
     def __init__(self, func):
         """
-        Creates a `LazyString` object using `func` as the delayed closure. `func` must return a
-        string.
+        Creates a `LazyString` object using `func` as the delayed closure.
+        `func` must return a string.
         """
         self._func = func
 
@@ -21,7 +23,7 @@ class LazyString(StringLike):
         """
         Returns the actual string.
         """
-        return self._func()
+        return self.text_type(self._func())
 
 
 class CachedLazyString(LazyString):
@@ -40,5 +42,5 @@ class CachedLazyString(LazyString):
         Returns the actual string and caches the result.
         """
         if not self._cache:
-            self._cache = self._func()
+            self._cache = self.text_type(self._func())
         return self._cache

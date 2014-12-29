@@ -1,0 +1,9 @@
+[run]
+source = stringlike
+omit = test/*
+
+[report]
+exclude_lines =
+    pragma: no cover
+    raise NotImplementedError
+    pass
